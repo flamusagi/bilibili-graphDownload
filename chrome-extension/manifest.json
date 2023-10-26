@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "b站动态下载图片",
+  "version": "1.0",
+  "description": "可以一键下载该条动态的所有图片",
+  "permissions": ["activeTab"],
+  "author": "flamusagi",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+
+  "content_scripts": [
+    {
+      "matches": ["*://t.bilibili.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
